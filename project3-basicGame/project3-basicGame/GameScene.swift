@@ -14,12 +14,14 @@ class GameScene: SKScene {
     var ball = ["whiteSphere"]
     
     override func didMove(to view: SKView) {
-        
+        let background = SKSpriteNode(imageNamed: "whiteSphere")
+        background.position = CGPoint(x: frame.midX, y: frame.midY)
+        background.alpha = 0.2
+        background.zPosition = -1
         
     }
     
     
-   pro  
     
     override func update(_ currentTime: TimeInterval) {
         // Called before each frame is rendered
